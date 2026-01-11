@@ -1,0 +1,135 @@
+ 
+****************************************
+Report : qor
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 12 22:52:41 2025
+****************************************
+
+
+  Timing Path Group 'gclk'
+  -----------------------------------
+  Levels of Logic:               7.00
+  Critical Path Length:          0.35
+  Critical Path Slack:           0.78
+  Critical Path Clk Period:      1.66
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'in2out'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.06
+  Critical Path Slack:           0.60
+  Critical Path Clk Period:      1.66
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'in2reg'
+  -----------------------------------
+  Levels of Logic:               5.00
+  Critical Path Length:          0.22
+  Critical Path Slack:           0.11
+  Critical Path Clk Period:      1.66
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2out'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.10
+  Critical Path Slack:           1.06
+  Critical Path Clk Period:      1.66
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'reg2reg'
+  -----------------------------------
+  Levels of Logic:               9.00
+  Critical Path Length:          5.48
+  Critical Path Slack:          -3.86
+  Critical Path Clk Period:      1.66
+  Total Negative Slack:       -319.38
+  No. of Violating Paths:      415.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       3426
+  Hierarchical Port Count:      58044
+  Leaf Cell Count:              39539
+  Buf/Inv Cell Count:            5701
+  Buf Cell Count:                 466
+  Inv Cell Count:                5235
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     32262
+  Sequential Cell Count:         7277
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    11360.361463
+  Noncombinational Area:  6755.015991
+  Buf/Inv Area:           1056.941985
+  Total Buffer Area:           126.10
+  Total Inverter Area:         930.85
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             18115.377454
+  Design Area:           18115.377454
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         45085
+  Nets With Violations:            21
+  Max Trans Violations:             5
+  Max Cap Violations:              16
+  -----------------------------------
+
+
+  Hostname: mavenserver-RH3
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    3.35
+  Logic Optimization:                 46.86
+  Mapping Optimization:               77.74
+  -----------------------------------------
+  Overall Compile Time:              408.43
+  Overall Compile Wall Clock Time:   329.65
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 3.86  TNS: 319.38  Number of Violating Paths: 415
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -group in2out
+        -max_paths 1
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 12 22:52:41 2025
+****************************************
+Wire Load Model Mode: Inactive.
+
+  Startpoint: global_shift_enable
+              (input port clocked by gclk)
+  Endpoint: so (output port clocked by gclk)
+  Path Group: in2out
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                  0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  input external delay                                    0.50       0.50 r    
+  global_shift_enable (in)                                0.00       0.50 r    
+  fpu_rptr_groups/global_shift_enable (fpu_rptr_groups)
+                                                          0.00       0.50 r    
+  fpu_rptr_groups/i_ctu_tst_buf1_lo/in[2] (fpu_bufrpt_grp4_9)
+                                                          0.00       0.50 r    
+  fpu_rptr_groups/i_ctu_tst_buf1_lo/out[2] (fpu_bufrpt_grp4_9)
+                                                          0.00       0.50 r    
+  fpu_rptr_groups/global_shift_enable_buf1 (fpu_rptr_groups)
+                                                          0.00       0.50 r    
+  test_stub/global_shift_enable (test_stub_scan)          0.00       0.50 r    
+  test_stub/se (test_stub_scan)                           0.00       0.50 r    
+  fpu_rptr_groups/se (fpu_rptr_groups)                    0.00       0.50 r    
+  fpu_rptr_groups/i_se_buf1/in[2] (fpu_bufrpt_grp4_7)     0.00       0.50 r    
+  fpu_rptr_groups/i_se_buf1/out[2] (fpu_bufrpt_grp4_7)
+                                                          0.00       0.50 r    
+  fpu_rptr_groups/i_se_mul64_buf2/in[2] (fpu_bufrpt_grp4_5)
+                                                          0.00       0.50 r    
+  fpu_rptr_groups/i_se_mul64_buf2/out[2] (fpu_bufrpt_grp4_5)
+                                                          0.00       0.50 r    
+  fpu_rptr_groups/se_cluster_header_buf2 (fpu_rptr_groups)
+                                                          0.00       0.50 r    
+  cluster_header/se (bw_clk_cl_fpu_cmp)                   0.00       0.50 r    
+  cluster_header/I0/se (cluster_header)                   0.00       0.50 r    
+  cluster_header/I0/dbginit_repeater/se (synchronizer_asr_0)
+                                                          0.00       0.50 r    
+  cluster_header/I0/dbginit_repeater/syncff/se (bw_u1_soffasr_2x_0)
+                                                          0.00       0.50 r    
+  cluster_header/I0/dbginit_repeater/syncff/i0/se (zsoffasr_prim_0)
+                                                          0.00       0.50 r    
+  cluster_header/I0/dbginit_repeater/syncff/i0/U2/X (SAEDRVT14_ND2B_U_0P5)
+                                                          0.02       0.52 f    0.60
+  cluster_header/I0/dbginit_repeater/syncff/i0/so (zsoffasr_prim_0)
+                                                          0.00       0.52 f    
+  cluster_header/I0/dbginit_repeater/syncff/so (bw_u1_soffasr_2x_0)
+                                                          0.00       0.52 f    
+  cluster_header/I0/dbginit_repeater/so (synchronizer_asr_0)
+                                                          0.00       0.52 f    
+  cluster_header/I0/so (cluster_header)                   0.00       0.52 f    
+  cluster_header/so (bw_clk_cl_fpu_cmp)                   0.00       0.52 f    
+  fpu_rptr_groups/scan_manual_6 (fpu_rptr_groups)         0.00       0.52 f    
+  fpu_rptr_groups/i_so_cluster_header_buf1/in[3] (fpu_bufrpt_grp4_1)
+                                                          0.00       0.52 f    
+  fpu_rptr_groups/i_so_cluster_header_buf1/out[3] (fpu_bufrpt_grp4_1)
+                                                          0.00       0.52 f    
+  fpu_rptr_groups/scan_manual_6_buf1 (fpu_rptr_groups)
+                                                          0.00       0.52 f    
+  test_stub/long_chain_so_0 (test_stub_scan)              0.00       0.52 f    
+  test_stub/U3/X (SAEDRVT14_AO32_U_0P5)                   0.04       0.56 f    0.60
+  test_stub/so_0 (test_stub_scan)                         0.00       0.56 f    
+  fpu_rptr_groups/so_unbuf (fpu_rptr_groups)              0.00       0.56 f    
+  fpu_rptr_groups/i_se_buf1/in[1] (fpu_bufrpt_grp4_7)     0.00       0.56 f    
+  fpu_rptr_groups/i_se_buf1/out[1] (fpu_bufrpt_grp4_7)
+                                                          0.00       0.56 f    
+  fpu_rptr_groups/i_fp_cpx_buf1_9/in[9] (fpu_rptr_fp_cpx_grp16_0)
+                                                          0.00       0.56 f    
+  fpu_rptr_groups/i_fp_cpx_buf1_9/out[9] (fpu_rptr_fp_cpx_grp16_0)
+                                                          0.00       0.56 f    
+  fpu_rptr_groups/so (fpu_rptr_groups)                    0.00       0.56 f    
+  so (out)                                                0.00       0.56 f    
+  data arrival time                                                  0.56      
+
+  clock gclk (rise edge)                                  1.66       1.66      
+  clock network delay (ideal)                             0.00       1.66      
+  output external delay                                  -0.50       1.16      
+  data required time                                                 1.16      
+  ------------------------------------------------------------------------------------
+  data required time                                                 1.16      
+  data arrival time                                                 -0.56      
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                        0.60      
+
+
+1

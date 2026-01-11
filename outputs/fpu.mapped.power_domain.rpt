@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power_domain
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 12 22:56:22 2025
+****************************************
+
+------------------------------------------------------------------------------
+
+ Power Domain             : PD
+ Current Scope            : fpu
+ Elements                 : <top_level>
+ Available Supply Nets    : VDD, VSS, VDDH
+ Available Supply Sets    : PD.primary
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   VDD                     VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+ Default Isolation:            -                       -
+   (Max Op. Voltage)          (-)                     (-)
+ Default Retention:            -                       -
+   (Max Op. Voltage)          (-)                     (-)
+
+------------------------------------------------------------------------------
+
+ Power Domain             : fpu_mul/PDm
+ Current Scope            : fpu
+ Elements                 : fpu_mul
+ Available Supply Nets    : VDD, VSS, VDDH, VDD, VDDo, VSS
+ Available Supply Sets    : PD.primary, fpu_mul/PDm.primary
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   fpu_mul/VDD             fpu_mul/VSS
+   (Max Op. Voltage)         (0.72)                  (0.00)
+ Default Isolation:            -                       -
+   (Max Op. Voltage)          (-)                     (-)
+ Default Retention:            -                       -
+   (Max Op. Voltage)          (-)                     (-)
+
+------------------------------------------------------------------------------
+
+ Power Domain             : fpu_add/PD
+ Current Scope            : fpu
+ Elements                 : fpu_add
+ Available Supply Nets    : VDD, VSS, VDDH, VDD, VSS
+ Available Supply Sets    : PD.primary, fpu_add/PD.primary
+
+ Connections                -- Power --             -- Ground --
+ Primary:                   fpu_add/VDD             fpu_add/VSS
+   (Max Op. Voltage)         (0.60)                  (0.00)
+ Default Isolation:            -                       -
+   (Max Op. Voltage)          (-)                     (-)
+ Default Retention:            -                       -
+   (Max Op. Voltage)          (-)                     (-)
+
+------------------------------------------------------------------------------
+1

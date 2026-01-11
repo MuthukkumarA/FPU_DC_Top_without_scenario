@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : supply_net
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 12 22:56:22 2025
+****************************************
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDD
+ Current Scope         : fpu
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.60)           (0.60)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD(*) PDm PD  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VSS
+ Current Scope         : fpu
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.00)           (0.00)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD(*) PDm PD  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDD
+ Current Scope         : fpu
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.60)           (0.60)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD(*) PDm PD  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VSS
+ Current Scope         : fpu
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.00)           (0.00)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD(*) PDm PD  
+
+------------------------------------------------------------------------------
+
+ Supply Net            : VDDH
+ Current Scope         : fpu
+ Operating Voltage     : -- Maximum --    -- Minimum --   
+                            (0.72)           (0.72)
+
+ Supply States         : No supply states defined for the net. 
+ Power Domain          : PD PDm PD  
+
+------------------------------------------------------------------------------
+1

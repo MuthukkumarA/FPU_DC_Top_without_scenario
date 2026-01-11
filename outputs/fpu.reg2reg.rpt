@@ -1,0 +1,69 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -group reg2reg
+        -max_paths 1
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 12 22:52:41 2025
+****************************************
+Wire Load Model Mode: Inactive.
+
+  Startpoint: fpu_add/fpu_add_ctl/i_a6stg_opdec/q_reg_5_
+              (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: fpu_add/fpu_add_frac_dp/i_a3stg_frac2/q_reg_34_
+            (rising edge-triggered flip-flop clocked by gclk)
+  Path Group: reg2reg
+  Path Type: max
+
+  Point                                                   Incr       Path      Voltage
+  ------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                  0.00       0.00      
+  clock network delay (ideal)                             0.00       0.00      
+  fpu_add/fpu_add_ctl/i_a6stg_opdec/q_reg_5_/CK (SAEDRVT14_FSDPQ_V2LP_1)
+                                                          0.00       0.00 r    0.60
+  fpu_add/fpu_add_ctl/i_a6stg_opdec/q_reg_5_/Q (SAEDRVT14_FSDPQ_V2LP_1)
+                                                          0.03       0.03 f    0.60
+  fpu_add/fpu_add_ctl/i_a6stg_opdec/q[5] (fpu_add_dffre_s_SIZE6_0)
+                                                          0.00       0.03 f    
+  fpu_add/fpu_add_ctl/U3/X (SAEDRVT14_ND2B_U_0P5)         0.05       0.08 r    0.60
+  fpu_add/fpu_add_ctl/U242/X (SAEDRVT14_BUF_ECO_1)        0.06       0.14 r    0.60
+  fpu_add/fpu_add_ctl/U474/X (SAEDRVT14_AN2_MM_1)         0.05       0.19 r    0.60
+  fpu_add/fpu_add_ctl/a2stg_shr_frac2_shr_int (fpu_add_fpu_add_ctl_0)
+                                                          0.00       0.19 r    
+  fpu_add/fpu_add_frac_dp/a2stg_shr_frac2_shr_int (fpu_add_fpu_add_frac_dp_0)
+                                                          0.00       0.19 r    
+  fpu_add/fpu_add_frac_dp/U4682/X (SAEDRVT14_OR2B_PMM_2)
+                                                          1.55       1.73 r    0.60
+  fpu_add/fpu_add_frac_dp/U1881/X (SAEDRVT14_INV_0P5)     3.14       4.87 f    0.60
+  fpu_add/fpu_add_frac_dp/U2575/X (SAEDRVT14_OAI21_0P5)
+                                                          0.47       5.35 r    0.60
+  fpu_add/fpu_add_frac_dp/U2579/X (SAEDRVT14_ND2_CDC_1)
+                                                          0.08       5.43 f    0.60
+  fpu_add/fpu_add_frac_dp/i_a3stg_frac2/din[34] (fpu_add_dff_s_SIZE64_0)
+                                                          0.00       5.43 f    
+  fpu_add/fpu_add_frac_dp/i_a3stg_frac2/U75/X (SAEDRVT14_INV_0P5)
+                                                          0.03       5.46 r    0.60
+  fpu_add/fpu_add_frac_dp/i_a3stg_frac2/U76/X (SAEDRVT14_NR2_MM_1)
+                                                          0.02       5.48 f    0.60
+  fpu_add/fpu_add_frac_dp/i_a3stg_frac2/q_reg_34_/D (SAEDRVT14_FSDPQ_V2LP_1)
+                                                          0.00       5.48 f    0.60
+  data arrival time                                                  5.48      
+
+  clock gclk (rise edge)                                  1.66       1.66      
+  clock network delay (ideal)                             0.00       1.66      
+  fpu_add/fpu_add_frac_dp/i_a3stg_frac2/q_reg_34_/CK (SAEDRVT14_FSDPQ_V2LP_1)
+                                                          0.00       1.66 r    
+  library setup time                                     -0.04       1.62      
+  data required time                                                 1.62      
+  ------------------------------------------------------------------------------------
+  data required time                                                 1.62      
+  data arrival time                                                 -5.48      
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -3.86      
+
+
+1
