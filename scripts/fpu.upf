@@ -1,0 +1,26 @@
+#power domain PD
+#supply port VDD VDDh VSS
+#supply_net VDD -ports {VDD simpleuart/VDD spimemio/VDDo}
+#supply net VSS -ports {VSS simpleuart/VSS spimemio/VSS}
+#supply net VDDh -ports {VDDh spimemio/VDD}
+
+#load_upf ../../../Simpleuart/DC_Synthesis_topo/scripts/simpleuart.upf 
+#load_upf ../../../Spimemio/DC_Synthesis_topo/scripts/spimemio.upf 
+
+create_power_domain PD -include_scope
+
+create_supply_port VDD 
+create_supply_port VSS
+create_supply_port VDDH
+
+create_supply_net VDD
+create_supply_net VSS
+create_supply_net VDDH
+
+connect_supply_net VDD -ports {VDD fpu_add/VDD fpu_mul/VDDo}
+
+connect_supply_net VDDH -ports {VDDH fpu_mul/VDD}
+
+connect_supply_net VSS -ports {VSS fpu_add/VSS fpu_mul/VSS}
+
+set_domain_supply_net PD -primary_power_net VDD -primary_ground_net VSS
